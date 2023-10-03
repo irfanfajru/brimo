@@ -47,22 +47,22 @@ export default function FastMenu() {
           </svg>
         </h1>
       </div>
-      <div className="flex justify-center mt-4">
-        <div className="flex overflow-x-auto scrollbar-hide px-10 space-x-8 w-screen md:w-96">
+      <div className="flex justify-center mt-8">
+        <div className="flex overflow-x-auto scrollbar-hide px-10 space-x-12 w-screen md:w-96">
           {fastmenus.map((v, i) => (
             <div
               key={v.name}
-              className="flex-shrink-0 w-16 text-center space-y-2"
+              className="flex-shrink-0 w-12 text-center space-y-2"
             >
               <Image
                 key={v.name}
                 width={60}
                 height={60}
                 alt={v.name}
-                className="w-16"
+                className="w-12"
                 src={v.src}
               />
-              <p className="text-sm font-semibold text-break md:text-md">
+              <p className="text-xs font-semibold text-break md:text-sm">
                 {v.name}
               </p>
             </div>
